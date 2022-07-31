@@ -1,5 +1,7 @@
-print("WELCOME TO PETASCO QUIZ GAME")
-print("##############################")
+username = input("ENTER YOUR NAME: ").upper()
+print("#############################################################################################")
+print("<=============> HELLO " + username + ", WELCOME TO PETASCO QUIZ GAME <=================>")
+print("#############################################################################################")
 play_option = input("DO YOU WANT TO PLAY? ")
 if play_option.lower() != "yes":
     quit()
@@ -108,4 +110,35 @@ else:
 
 # total score
 print("YOU GOT " + str(score) + " QUESTIONS CORRECT")
-percentage_score = print("YOU SCORED " + str((score/10) * 100) +"%.")
+percentage = str((score/10) * 100)
+
+percentage_score = print("YOU SCORED " + percentage +"%.")
+
+percentage = float(percentage)
+if percentage >= 80:
+    print("GRADE : A")
+    print("EXCELLENT JOB", username, "KEEP IT UP!")
+elif percentage >= 75:
+
+    print("GRADE : B+")
+    print("GREAT JOB", username, "WELL DONE!")
+
+elif percentage >= 70:
+    print("GRADE : B")
+    print("GOOD JOB", username, "KEEP LEARNING")
+
+elif percentage >= 65:
+    print("GRADE : C+")
+
+elif percentage >= 60:
+    print("GRADE : C")
+
+elif percentage >= 55:
+    print("GRADE : D+")
+
+elif percentage >= 50:
+    print("GRADE : D")
+
+else:
+    print("GRADE : E")
+    print("SIT UP",username)
