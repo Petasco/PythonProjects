@@ -23,21 +23,22 @@ while True:
     print("Petasco Picks", petasco_pick + ".")
 
     if user_input == "rock" and petasco_pick == "scissors":
-        print("YOU WON!")
+        print("<=**********=> CONGRATS! YOU WON! <=*****************=>")
         user_score += 1
 
     elif user_input == "paper" and petasco_pick == "rock":
-        print("YOU WON!")
+        print("<=**********=> CONGRATS! YOU WON! <=*****************=>")
         user_score += 1
 
     elif user_input == "scissors" and petasco_pick == "paper":
-        print("YOU WON!")
+        print("<=**********=> CONGRATS! YOU WON! <=*****************=>")
         user_score += 1
 
     else:
-        print("YOU LOST!")
+        print("<=**********=> OOPs! YOU LOST! <=*****************=>")
         petasco_score += 1
 
     print("YOU WON ", user_score, "TIMES")
     print("PETASCO WON", petasco_score, "TIMES")
-    print("--------- THANK YOU FOR PLAYING WITH PETASCO ------------")
+    print("<=************* PLAY AGAIN ************************=>")
+print("--------- THANK YOU FOR PLAYING WITH PETASCO ------------")
