@@ -40,5 +40,5 @@ while True:
 
     print("YOU WON ", user_score, "TIMES")
     print("PETASCO WON", petasco_score, "TIMES")
-    print("<=************* PLAY AGAIN ************************=>")
+    print("<=*************-> PLAY AGAIN! <-************************=>")
 print("--------- THANK YOU FOR PLAYING WITH PETASCO ------------")

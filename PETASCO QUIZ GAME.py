@@ -118,6 +118,7 @@ percentage = float(percentage)
 if percentage >= 80:
     print("GRADE : A")
     print("EXCELLENT JOB", username, "KEEP IT UP!")
+
 elif percentage >= 75:
 
     print("GRADE : B+")
@@ -142,3 +143,13 @@ elif percentage >= 50:
 else:
     print("GRADE : E")
     print("SIT UP",username)
+
+while True:
+    play_again = input("DO YOU WANT TO PLAY AGAIN?: ").lower()
+    if play_again == 'no':
+        print("<=**********=> THANK YOU ", username + "! FOR PLAYING WITH PETASCO <=*****************=>")
+        quit()
+    elif play_again == 'yes':
+        continue
+    else:
+        print("INVALID INPUT")
